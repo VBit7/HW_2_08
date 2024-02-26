@@ -7,6 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+pymongo = {extras = ["srv"], version = "^4.6.2"}
+mongoengine = "^0.27.0"
+redis = "^5.0.1"
+regex = "^2023.12.25"
 
 
 [build-system]
