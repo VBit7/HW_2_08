@@ -4,7 +4,6 @@ from models import Author, Quote
 # Підключення до бази даних MongoDB Atlas
 connect(
     'mydatabase',
-    # host='mongodb+srv://<username>:<password>@<cluster-name>.mongodb.net/<database-name>?retryWrites=true&w=majority'
     host="mongodb+srv://user:Example12345@cluster8.w3d66gu.mongodb.net/hw8?retryWrites=true&w=majority&appName=Cluster8"
 )
 
