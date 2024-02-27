@@ -1,7 +1,7 @@
 from mongoengine import connect
 from models import Author, Quote
 
-# Підключення до бази даних MongoDB Atlas
+
 connect(
     'mydatabase',
     host="mongodb+srv://user:Example12345@cluster8.w3d66gu.mongodb.net/hw8?retryWrites=true&w=majority&appName=Cluster8"
@@ -33,7 +33,8 @@ def search_quotes(query):
     else:
         print("Invalid query.")
 
-# Головний цикл для пошуку
-while True:
-    user_input = input("Enter your search query: ")
-    search_quotes(user_input)
+
+if __name__ == '__main__':
+    while True:
+        user_input = input("Enter your search query: ")
+        search_quotes(user_input)
